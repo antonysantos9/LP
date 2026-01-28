@@ -1,23 +1,27 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
     opacity: 0.7;
     font-size: 18px;
 }
-a:hover{
+
+a:hover {
     cursor: pointer;
     opacity: 1;
 }
-i{
+
+i {
     font-size: 30px;
 }
+
 nav {
     position: fixed;
     z-index: 999;
@@ -30,67 +34,158 @@ nav {
     justify-content: center;
     gap: 30px;
     color: blue;
-}
-#s1{
 
-height: 100vh;
-padding-top: 80px;
-display: flex;
-align-items: center;
-justify-content: center;
-box-shadow: 0px 3px 10px #090909;
- flex-wrap: wrap;
- gap: 100px;
 }
-.left{
-background-color: rgb(255, 255, 255);
-width: 400px;
-height: 400px;
-align-items: center;
+
+#s1 {
+
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-   display: flex;
-   overflow: hidden;
-   border: 2px solid #090909;
-   border-radius: 100%;
-   box-shadow: 0px 3px 10px #090909;
+    box-shadow: 0px 3px 10px #090909;
+    flex-wrap: wrap;
+    gap: 100px;
+    box-shadow: 0px 3px 10px #000000;
 }
-.left img{
-width: 400px;
-height: auto;
-transition: all 200ms ease-in-out;
+
+.left {
+    background-color: rgb(255, 255, 255);
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+    border: 2px solid #090909;
+    border-radius: 100%;
+    box-shadow: 0px 3px 10px #090909;
+}
+
+.left img {
+    width: 400px;
+    height: auto;
+    transition: all 200ms ease-in-out;
 
 }
-.left:hover img{
-    transform: scale(1.1) rotate(-2deg);
-}
-.right{
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: 400px;
-height: 200px;
-display: flex;
-}
-#s2{
 
-height: 100vh;
-background-image: url(espace.jpg);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-background-attachment: fixed;
+.left:hover img {
+    transform: scale(1.1);
 }
-#s3{
 
-height: 100vh;
-padding-top: 80px;
+.right {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    height: 200px;
+    display: flex;
 }
-#s4{
 
-height: 100vh;
-padding-top: 80px;
+#s2 {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-image: url(./images/space.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
 }
-footer{
+
+.card {
+    width: 300px;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.wrabText {
+    padding: 20px;
+}
+
+.card img {
+    width: 300px;
+    height: auto;
+}
+
+.video {
+    width: 550px;
+    height: 315px;
+    box-shadow: 0px 3px 10px #000000;
+    border-radius: 20px;
+    transition: all 200ms ease-in-out;
+}
+
+.video:hover {
+    transform: scale(1.1);
+}
+
+#s3 {
+
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+#s4 {
+    height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+#s4 div {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+    
+}
+
+.not img {
+    display: flex;
+    width: 300px;
+    height: auto;
+    border: 2px solid #000000;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    transition: all 200ms ease-in-out;
+}
+.not img:hover{
+    transform: scale(1.1);
+}
+
+.text {
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+ transition: all 200ms ease-in-out;
+}
+.text:hover{
+    transform: scale(1.1);
+}
+
+footer {
     height: 50px;
     box-shadow: 0px 3px 10px #090909;
     display: flex;
@@ -98,4 +193,22 @@ footer{
     justify-content: center;
     gap: 30px;
     color: blue;
+}
+
+i {
+    transition: all 200ms ease-in-out;
+}
+
+i:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+@media (width <=1000px) {
+    #s1 {
+        padding-top: 100px;
+    }
+
+    #s2 {
+        margin-top: 100px
+    }
 }
